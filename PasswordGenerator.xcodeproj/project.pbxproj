@@ -7,19 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1AA35A926D6697F001D15AC /* PasswordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AA35A826D6697F001D15AC /* PasswordManager.swift */; };
 		D1C0A6A126B7C19F003D5D82 /* PasswordGeneratorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A6A026B7C19F003D5D82 /* PasswordGeneratorApp.swift */; };
 		D1C0A6A326B7C19F003D5D82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0A6A226B7C19F003D5D82 /* ContentView.swift */; };
 		D1C0A6A526B7C19F003D5D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C0A6A426B7C19F003D5D82 /* Assets.xcassets */; };
 		D1C0A6A826B7C19F003D5D82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1C0A6A726B7C19F003D5D82 /* Preview Assets.xcassets */; };
+		D1FC6CA226B7F67300DE0338 /* PasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FC6CA126B7F67300DE0338 /* PasswordView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D1AA35A826D6697F001D15AC /* PasswordManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordManager.swift; sourceTree = "<group>"; };
 		D1C0A69D26B7C19F003D5D82 /* PasswordGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1C0A6A026B7C19F003D5D82 /* PasswordGeneratorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordGeneratorApp.swift; sourceTree = "<group>"; };
 		D1C0A6A226B7C19F003D5D82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D1C0A6A426B7C19F003D5D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D1C0A6A726B7C19F003D5D82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D1C0A6A926B7C19F003D5D82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1FC6CA126B7F67300DE0338 /* PasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1AA35A726D6695B001D15AC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D1AA35A826D6697F001D15AC /* PasswordManager.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		D1C0A69426B7C19F003D5D82 = {
 			isa = PBXGroup;
 			children = (
@@ -53,7 +65,8 @@
 			isa = PBXGroup;
 			children = (
 				D1C0A6A026B7C19F003D5D82 /* PasswordGeneratorApp.swift */,
-				D1C0A6A226B7C19F003D5D82 /* ContentView.swift */,
+				D1FC6CA026B7F65600DE0338 /* Views */,
+				D1AA35A726D6695B001D15AC /* ViewModel */,
 				D1C0A6A426B7C19F003D5D82 /* Assets.xcassets */,
 				D1C0A6A926B7C19F003D5D82 /* Info.plist */,
 				D1C0A6A626B7C19F003D5D82 /* Preview Content */,
@@ -67,6 +80,15 @@
 				D1C0A6A726B7C19F003D5D82 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D1FC6CA026B7F65600DE0338 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D1C0A6A226B7C19F003D5D82 /* ContentView.swift */,
+				D1FC6CA126B7F67300DE0338 /* PasswordView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +161,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1C0A6A326B7C19F003D5D82 /* ContentView.swift in Sources */,
+				D1FC6CA226B7F67300DE0338 /* PasswordView.swift in Sources */,
+				D1AA35A926D6697F001D15AC /* PasswordManager.swift in Sources */,
 				D1C0A6A126B7C19F003D5D82 /* PasswordGeneratorApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.island.PasswordGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,7 +326,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.island.PasswordGenerator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
