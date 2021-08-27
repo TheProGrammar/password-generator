@@ -27,6 +27,18 @@ class PasswordManager: ObservableObject {
                 password += letters.randomElement()!
             }
         }
+        else if includeNumbers && includeCharacters == false {
+            for _ in 1...4 {
+                password += letters.randomElement()!
+                password += numbers.randomElement()!
+            }
+        }
+        else if includeNumbers == false && includeCharacters {
+            for _ in 1...4 {
+                password += letters.randomElement()!
+                password += specialCharacters.randomElement()!
+            }
+        }
         else if includeNumbers && includeCharacters {
             for _ in 1...3 {
                 password += letters.randomElement()!

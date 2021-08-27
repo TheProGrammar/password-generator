@@ -17,7 +17,7 @@ struct PasswordView: View {
     
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color("blackDark"), Color("blueLight")]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(gradient: Gradient(colors: [Color("blueLight"), Color("blackDark")]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(.all)
             VStack {
                 Spacer()
@@ -31,7 +31,7 @@ struct PasswordView: View {
                     .fontWeight(.semibold)
                     .padding(.top ,-20)
                     .foregroundColor(.white)
-                    .shadow(color: .secondary, radius: 1, x: 1, y: 1)
+                    .shadow(color: .black, radius: 1, x: 1, y: 1)
                 Spacer()
                 VStack {
                     Text("Click to copy")
@@ -45,13 +45,13 @@ struct PasswordView: View {
                             .fill(LinearGradient(gradient: Gradient(colors: [Color("yellowDark"), Color("yellowLight")]), startPoint: .leading, endPoint: .trailing))
                             .frame(width: 250, height: 50, alignment: .center)
                             .cornerRadius(15)
-                            .shadow(color: .secondary, radius: 3, x: 3, y: 3)
+                            .shadow(color: Color("blackButton"), radius: 3, x: 2, y: 2)
                         Text(manager.generatePassword())
                             .foregroundColor(.white)
                             .font(.system(size: 28))
                             .italic()
                             .fontWeight(.regular)
-                            .shadow(color: .secondary, radius: 1, x: 1, y: 1)
+                            .shadow(color: Color("blackButton"), radius: 1, x: 1, y: 1)
                     }
                 }.padding(.bottom, 120)
             }

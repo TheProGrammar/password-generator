@@ -16,7 +16,7 @@ struct ContentView: View {
         NavigationView() {
             ZStack {
                 
-                LinearGradient(gradient: Gradient(colors: [Color("blackDark"), Color("blackLight")]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                LinearGradient(gradient: Gradient(colors: [Color("blueLight"), Color("blackDark")]), startPoint: .topLeading, endPoint: .bottomTrailing)
                     .edgesIgnoringSafeArea(.all)
                 
                 VStack {
@@ -31,7 +31,7 @@ struct ContentView: View {
                         .fontWeight(.semibold)
                         .padding(.top ,-20)
                         .foregroundColor(.white)
-                        .shadow(color: .secondary, radius: 1, x: 1, y: 1)
+                        .shadow(color: .black, radius: 1, x: 1, y: 1)
                     Spacer(minLength: 50)
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
@@ -44,7 +44,7 @@ struct ContentView: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
                                 .foregroundColor(.white)
-                                .shadow(color: .secondary, radius: 0, x: 1, y: 1)
+                                .shadow(color: .black, radius: 1, x: 0.5, y: 0.5)
                         }
                         .padding(.horizontal, 80)
                     }
@@ -59,7 +59,7 @@ struct ContentView: View {
                                 .fontWeight(.light)
                                 .multilineTextAlignment(.leading)
                                 .foregroundColor(.white)
-                                .shadow(color: .secondary, radius: 0, x: 1, y: 1)
+                                .shadow(color: .black, radius: 1, x: 0.5, y: 0.5)
                         }
                         .padding(.horizontal, 80)
                     }
@@ -69,13 +69,14 @@ struct ContentView: View {
                             .fill(LinearGradient(gradient: Gradient(colors: [Color("yellowDark"), Color("yellowLight")]), startPoint: .leading, endPoint: .trailing))
                             .frame(width: 200, height: 50, alignment: .center)
                             .cornerRadius(15)
-                            .shadow(color: .secondary, radius: 3, x: 3, y: 3)
+                            .shadow(color: Color("blackButton"), radius: 3, x: 2, y: 2)
                         generateButton(manager: manager)
                     }
                     Spacer(minLength: 100)
                 }
             }
         }
+        .accentColor(.white)
     }
 }
 
@@ -92,7 +93,7 @@ struct generateButton: View {
                 .frame(width: 200, height: 50, alignment: .center)
                 .foregroundColor(.white)
                 .cornerRadius(15)
-                .shadow(color: .secondary, radius: 1, x: 1.5, y: 1.5)
+                .shadow(color: Color("blackButton"), radius: 1, x: 1, y: 1)
         }
     }
 }
