@@ -4,7 +4,7 @@
 
 ## What is SafePass?
 
-SafePass is a simple SwiftUI based password generator app that creates custom password.
+SafePass is a simple SwiftUI based password generator app that creates a custom password.
 
 ## Description
 
@@ -12,12 +12,12 @@ The password generator creates a custom password based on a user's preferences. 
 
 ## Contribution
 
-Feel free to contribute to this project. All tips and contributions are welcomed.
+Feel free to contribute to this project. All opinions and contributions are welcome.
 
 ## Author
 
-This app was made by me, Miroslav Mali. If you want to contact me, you can send me mixlaproduction@gmail.com.
+This app was made by me, Miroslav Mali. You can contact me at mixlaproduction@gmail.com.
 
 ## Credits
 
-App UI design ideas inspired by variety of UI images from google.
+The app UI design ideas inspired by variety of UI images from google.
