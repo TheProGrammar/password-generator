@@ -63,6 +63,19 @@ struct ContentView: View {
                         }
                         .padding(.horizontal, 80)
                     }
+                    VStack {
+                        Text("Number of characters: \(String(format: "%.f", manager.sliderValue))")
+                            .font(.system(size: 18))
+                            .italic()
+                            .fontWeight(.light)
+                            .multilineTextAlignment(.leading)
+                            .foregroundColor(.white)
+                            .shadow(color: .black, radius: 1, x: 0.5, y: 0.5)
+                            .offset(y: 3)
+                        Slider(value: $manager.sliderValue, in: 1...15)
+                            .padding(.horizontal, 70)
+                            .offset(y: 10.0)
+                    }.offset(y: 10)
                     Spacer()
                     ZStack{
                         Rectangle()
@@ -72,7 +85,7 @@ struct ContentView: View {
                             .shadow(color: Color("blackButton"), radius: 3, x: 2, y: 2)
                         generateButton(manager: manager)
                     }
-                    Spacer(minLength: 100)
+                    Spacer(minLength: 50)
                 }
             }
         }
