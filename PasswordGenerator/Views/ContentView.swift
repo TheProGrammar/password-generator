@@ -35,7 +35,7 @@ struct ContentView: View {
                     Spacer(minLength: 50)
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
-                            .frame(width: screenWidth * 0.68, height: 45, alignment: .center)
+                            .frame(width: screenWidth * 0.66, height: 45, alignment: .center)
                             .foregroundColor(.init(red: 0.75, green: 0.76, blue: 0.78, opacity: 0.2))
                         Toggle(isOn: $manager.includeNumbers.animation()) {
                             Text("Include numbers")
@@ -50,7 +50,7 @@ struct ContentView: View {
                     }
                     ZStack {
                         RoundedRectangle(cornerRadius: 15)
-                            .frame(width: screenWidth * 0.68, height: 45, alignment: .center)
+                            .frame(width: screenWidth * 0.66, height: 45, alignment: .center)
                             .foregroundColor(.init(red: 0.75, green: 0.76, blue: 0.78, opacity: 0.2))
                         Toggle(isOn: $manager.includeCharacters.animation()) {
                             Text("Include special characters")
@@ -72,7 +72,7 @@ struct ContentView: View {
                             .foregroundColor(.white)
                             .shadow(color: .black, radius: 1, x: 0.5, y: 0.5)
                             .offset(y: 3)
-                        Slider(value: $manager.sliderValue, in: 1...15)
+                        Slider(value: $manager.sliderValue, in: 1...15, step: 1)
                             .padding(.horizontal, 70)
                             .offset(y: 10.0)
                     }.offset(y: 10)
