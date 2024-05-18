@@ -8,7 +8,7 @@ SafePass is a simple SwiftUI based password generator app that creates a custom 
 
 ## Description
 
-The password generator creates a custom password based on a user's preferences. The password can, or not, include upper and lowercase letters, numbers, and special characters managed by two toggles on the main view. When clicked on the generate button, the app switches to the new view which shows the password view. By default with the both toggles off, it generates only the combination of uppercase and lowercase letters. Upon clicking on the created password, it will be copied into the clipboard and can be used anywhere where needed.
+The password generator creates custom passwords based on user preferences, including or excluding uppercase letters, lowercase letters, numbers, and special characters via two toggles on the main view. When the generate button is clicked, the app switches to a new view displaying the generated password. By default, with both toggles off, it generates a combination of uppercase and lowercase letters. Clicking the generated password copies it to the clipboard for use anywhere.
 
 ## Contribution
 
